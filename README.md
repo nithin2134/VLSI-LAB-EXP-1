@@ -56,6 +56,7 @@ Full Subtractor:
 VERILOG CODE:
 
 **LOGIC GATES**
+
 module logic(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate );
 
 input a,b;
@@ -79,6 +80,7 @@ not(notgate,a);
 endmodule
 
 **HALF ADDER**
+
 module HA(a,b,sum,carry);
 
 input a,b;
@@ -92,6 +94,7 @@ and (carry,a,b);
 endmodule
 
 **FULL ADDER**
+
 module FA(a,b,cin,sum,cout);
 
 input a,b,cin;
@@ -113,6 +116,7 @@ or g5(cout,w2,w3);
 endmodule
 
 **HALF SUBTRACTOR**
+
 module HS(a,b,diff,borrow);
 
 input a,b; 
@@ -126,6 +130,7 @@ and g2(borrow,~a,b);
 endmodule
 
 **FULL SUBTRACTOR**
+
 module FA(a,b,bin,diff,borrow);
 
 input a,b,bin;
